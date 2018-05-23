@@ -1,1 +1,8 @@
 # CMB-Covariance
+
+5/23/18:
+This repo contains the covariance code I wrote from scratch that determines approximate errors for CMB data, and then calculates Fisher matrix entries, F_ij. The code determines one entry at a time, so multiple function calls are required to build a full matrix. The Fisher ellipse code turns matrices into ellipse plots, allowing us to visualize any degeneracies between CMB parameters.
+
+This code should work for any kind of CMB parameter, although the data files provided here are for the modified gravity parameter, D_0. The named directories contain outputs from our modified New Higgs Inflation version of ISITGR. ‘log_s_N’ refers to the fixed s value, which corresponds to the transition rate from modified gravity back to textbook GR. ‘log_s_8’ means that log_10 (s) = 8.0 for all data contained within the directory (that is, s = 100,000,000). Within each directory there are ‘HIGH’, ‘LOW’, ‘SHORT’, and ‘LONG’ descriptors. ‘HIGH’ and ‘LOW’ refer to whether or not D_0 started above or below the nominal GR value of D_0 = 1.0. ‘SHORT’ and ‘LONG’ refer to the step size used to calculate a numerical derivative. For changes in D_0, long is +/- 10^{-6} around D_0 = 1, and short is +/- 10^{-7} around D_0 = 1. For changes in standard Lambda-CDM parameters (eg: H_0 or Omega_b), long is +/- 10^{-2} and short is +/- 10^{-3} around the Planck best constraint value. To make sure everything is clear, the data inputs for every run are contained within each run’s directory, as ‘values.txt’ for the Lambda-CDM values, and ‘valuespfp.txt’ for the modified gravity parameters. The ‘pfp’ suffix refers to Post Friedmann Parameterization.
+
+
