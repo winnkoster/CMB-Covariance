@@ -512,7 +512,7 @@ def covariance_matrix_err(axis, tt_spec, te_spec, ee_spec, input_source=default)
     f_sky = input_source[3]  # we only need to defined f_sky within THIS function. noise and fwhm are passed on to the combined_noise (which in turn passes on), but aren't touched here
 
     print(' ')
-    print('Running covariance_matrox_err() function...')
+    print('Running covariance_matrix_err() function...')
     print('------------INPUTS------------')
     print('Instrument Used: '+str(input_source[0]))
     print('Noise Input [uK arcmin]: '+str(input_source[1]))
@@ -747,7 +747,7 @@ fisher_information_result = fisher_information_total(axis, data_high_long_s3_5_t
 
 print(' ')
 print('------------COVARIANCE RESULT------------')
-print('Log(s) = 3.5, Derivatives=Long. This print line and this line only is HARD CODED so double check it. ')
+print('Log(s) = 3.5, Derivatives=Long. This print line and this line only is HARD CODED so double check it. ') # I'd LOVE a way to make this smarter and modular, so I don't have to write it every time
 print('Instrument Used: '+str(fisher_information_result[2]))
 print('Noise Input [uK arcmin]: '+str(fisher_information_result[3]))
 print('Instrument FWHM [arcmin]: '+str(fisher_information_result[4]))
