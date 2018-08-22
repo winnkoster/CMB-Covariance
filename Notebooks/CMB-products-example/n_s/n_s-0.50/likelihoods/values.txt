@@ -1,0 +1,3 @@
+planck2015_like = -1e+30
+planck_1_like = -14602.370607531588
+planck_2_like = -1e+30

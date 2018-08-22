@@ -1,0 +1,15 @@
+_cosmosis_order_d = u'z_cosmosis_order_k_h'
+_cosmosis_order_d_dot = u'z_cosmosis_order_k_h'
+_cosmosis_order_q = u'z_cosmosis_order_k_h'
+_cosmosis_order_q_dot = u'z_cosmosis_order_k_h'
+acmb = 0.0009
+d_0 = 0.9999999
+d_inf = 1.0
+k_c = 1e+30
+q_0 = 1.0
+q_inf = 1.0
+r_0 = 0.9999998000000001
+r_inf = 1.0
+s = 8.0
+v_0 = 0.9999998000000001
+v_inf = 1.0
